@@ -1,0 +1,3 @@
+# Introduction into FortiSOAR
+
+FortiSOAR is a powerful Security Orchestration, Automation, and Response (SOAR) platform developed by Fortinet, a leading cybersecurity company. It is designed to streamline and automate security operations, enabling organizations to respond to threats quickly and effectively. By integrating various security tools and technologies, FortiSOAR helps security teams enhance their incident response capabilities, reduce manual tasks, and improve overall security posture.

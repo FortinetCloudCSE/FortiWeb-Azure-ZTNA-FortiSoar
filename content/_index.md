@@ -1,25 +1,52 @@
 ---
-title: "Fortinet TECWorkshop Template - MVP1"
-menuTitle: "TECWorkshop Template"
+title: "ZTNA Azure"
 weight: 1
-archetype: home
 ---
 
-### Welcome!
+## Fortinet FortiGate SDWAN Networking Workshop on Azure
 
-This site will explain how to use the [Hugo Web Framework]("https://gohugo.io/") & the ["reLearn" Theme]("https://mcshelby.github.io/hugo-theme-relearn/index.html") to effectively organize & deliver Fortinet TEC Workshops & Product demos in a consistent, simple, and visually appealing format.
+In this workshop you will learn how to deploy Fortinet's FortiGate NGFW on Azure in several different use cases
 
-The beauty of this framework lies in its simplicity.  Within approx 30 mins, anybody can have a site up and running.  Content is created via Markdown files, and the workshop guide layout is simply a directory structure.
+### About TEC Workshops
 
-Follow along on this simple tutorial to get up and running with a Hugo formatted site for your TEC Workshop/training/demo content today!
+TEC Workshops provide the learner with the opportunity to put into practice newly developed skills in an easy to launch environment that can be used for customer engagements. At a minimum a TEC Workshop will include the following:
 
-### Learning Objectives
-- Setup UserRepo on your system & Build container with Hugo & CentralRepo
-- Learn to work in Hugo to create your content to display proper information flow for your TEC Workshop/demo/training
-- Publish your Hugo site to GitHub pages via a CI/CD model 
- 
-### Hugo and Fortinet TECWorkshops - Visually
-- The purpose of this workflow is to simplify creation of Fortinet TECWorkshop guides while providing an example CI/CD development environment with maximum re-usability 
-- Here's a visual representation of our process which will be fully explained in each chapter
+* A use case description
+* An integrated lab and demo environment
 
-{{< FTNThugoFlow >}}
+  * Informational call-outs for key points to discuss or highlight to a customer
+  * Questions that could be asked while giving the TEC Workshop as a demo
+  * Points of value that relate the business value to the technical feature
+* A reference architecture(s)
+
+Optional components may be included for certain use cases
+
+The TEC Workshop will not be a completely, self-contained learning experience for a single product. A TEC Workshop will cover features and often multiple products where they relate to the use case of interest.  
+
+Deployments will be automated for those tasks that are not salient to the learning or demonstration activity in the use case. For example, for a TEC Workshop focused on Indicators of Compromise, the system may deploy a FortiGate and FortiAnalyzer with configurations for these systems. However, the leaner will have to configure the Event Handlers for IOC setup.  
+
+## FortiWeb ZTNA TEC Workshop
+Introduction:
+
+With increase in remote workforce and devices off networks, Security for accessing applications have been a challenge. ZTNA offers security for users that are  not present on the network and are trying to access the applications and data. FortiWeb Web Application and API security firewall offers ZTNA with lot more other capabilities, protecting both North-South and east-West traffic. Fortiweb highlights include:
+
+* OWASP Top 10 protection signature database
+* Machine learning based Anomaly and Bot detection
+* ZTNA 
+* API Schema protection
+* Machine learning based API learning
+
+The purpose of this TEC Workshop is to familiarize the learner with FortiWeb ZTNA approach and architectural concepts specific to the Azure Cloud environment.
+
+## TEC Workshop Objectives
+
+* Deploy the FortiWeb and all the required components like FortiEMS using Terraform
+* Configure EMS
+* Configure FortiWeb to provide access from Internet to Web application with ZTNA
+* Configure FortiWeb to provide access on a trusted network to access the web API
+
+***
+
+{{< notice warning >}}
+The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various Fortinet and Azure services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments without full understanding of how they operate.
+{{< /notice >}}

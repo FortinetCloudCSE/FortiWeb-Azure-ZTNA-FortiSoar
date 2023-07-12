@@ -1,0 +1,320 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "@context": "/api/3/contexts/WorkflowCollection",
+      "@type": "WorkflowCollection",
+      "name": "00 - CSE ZTNA EMS Lab",
+      "description": null,
+      "visible": true,
+      "image": null,
+      "id": 43,
+      "createDate": 1689000496.647337,
+      "modifyDate": 1689000496.647337,
+      "deletedAt": null,
+      "importedBy": [],
+      "recordTags": [],
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "02-unquarantine-client",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1689075834,
+          "collection": "/api/3/workflow_collections/5c89c2bb-f88c-40fe-ace9-d8a46e508dfc",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/0254dac7-2627-4148-b15c-897a867f3fa5",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "approve unquarantine",
+              "description": null,
+              "arguments": {
+                "type": "InputBased",
+                "input": {
+                  "schema": {
+                    "title": "Approve request to unquarantine Client",
+                    "description": "The following client will be qurentined. Do you approve?\n\n* EMS Client ID: {{vars.steps.retrieve_endpoint_details.data.data.endpoints[0]['device_id']}}\n* Client IP: {{vars.endpoint_ip}}\n* Reason for Quarantine: {{vars.alert_subject}}",
+                    "inputVariables": []
+                  }
+                },
+                "record": "",
+                "agent_id": null,
+                "resources": "alerts",
+                "is_approval": false,
+                "owner_detail": {
+                  "isAssigned": false
+                },
+                "isRecordLinked": false,
+                "step_variables": [],
+                "response_mapping": {
+                  "options": [
+                    {
+                      "option": "Approve",
+                      "primary": true,
+                      "step_iri": "/api/3/workflow_steps/8c4ddd89-c82b-4126-8ed9-baa5d3e59963"
+                    },
+                    {
+                      "option": "Reject",
+                      "step_iri": "/api/3/workflow_steps/ceccb3d7-63a6-40cc-95f9-7c5b1e3e06e2"
+                    }
+                  ],
+                  "duplicateOption": false,
+                  "customSuccessMessage": "Awaiting Playbook resumed successfully."
+                },
+                "email_notification": {
+                  "enabled": false,
+                  "smtpParameters": []
+                },
+                "inline_channel_list": [],
+                "external_channel_list": [],
+                "unauthenticated_input": false
+              },
+              "status": null,
+              "top": "110",
+              "left": "1425",
+              "stepType": "/api/3/workflow_step_types/fc04082a-d7dc-4299-96fb-6837b1baa0fe",
+              "group": null,
+              "uuid": "e1ecf0ff-d66d-4f77-a659-fd0634f05286"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "cancel execution",
+              "description": null,
+              "arguments": [],
+              "status": null,
+              "top": "30",
+              "left": "1750",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "ceccb3d7-63a6-40cc-95f9-7c5b1e3e06e2"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "extract alert source data",
+              "description": null,
+              "arguments": {
+                "alert_source": "{{vars.input.records[0].sourcedata}}"
+              },
+              "status": null,
+              "top": "110",
+              "left": "450",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "903a2843-9226-434e-b06c-a7e345e4813e"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "extract client details",
+              "description": null,
+              "arguments": {
+                "endpoint_ip": "{{vars.alert_source.epip}}",
+                "alert_subject": "{{vars.alert_source.subject}}"
+              },
+              "status": null,
+              "top": "110",
+              "left": "775",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "5dba2e42-d7bf-41e2-ad29-bcb0c6903582"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "retrieve endpoint details",
+              "description": null,
+              "arguments": {
+                "name": "Fortinet FortiClient EMS",
+                "config": "93408477-c047-4254-92e8-fc6a7f2bf2fe",
+                "params": {
+                  "count": 50,
+                  "offset": 0,
+                  "status": "",
+                  "filters": "{\"ip\": \"{{vars.endpoint_ip}}\"}",
+                  "activity": "",
+                  "group_id": "",
+                  "order_by": "name",
+                  "client_id": "",
+                  "client_os": "",
+                  "device_id": "",
+                  "order_asc": true,
+                  "view_type": "",
+                  "connection": "",
+                  "event_type": "",
+                  "management": "",
+                  "verification": "{\n  \"saml_id\": \"\",\n  \"ldap_ids\": []\n}\n",
+                  "client_version": "",
+                  "custom_attributes": ""
+                },
+                "version": "1.1.0",
+                "connector": "fortinet-forticlient-ems",
+                "operation": "get_endpoints",
+                "operationTitle": "Get All Endpoints",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "110",
+              "left": "1100",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "a1a74fac-0fe0-424e-920c-ea51fa4bfc1b"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "0155dde0-87b9-4a2d-93c1-bfc8a677145f",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "displayConditions": {
+                  "alerts": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": []
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": false,
+                "showToasterMessage": {
+                  "visible": false,
+                  "messageVisible": true
+                },
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "110",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "group": null,
+              "uuid": "0254dac7-2627-4148-b15c-897a867f3fa5"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "unquarantine endpoint",
+              "description": null,
+              "arguments": {
+                "name": "Fortinet FortiClient EMS",
+                "config": "93408477-c047-4254-92e8-fc6a7f2bf2fe",
+                "params": {
+                  "ids": "{{vars.steps.retrieve_endpoint_details.data.data.endpoints.0['device_id']}}"
+                },
+                "version": "1.1.0",
+                "connector": "fortinet-forticlient-ems",
+                "operation": "unquarantine_endpoints",
+                "operationTitle": "Unquarantine Endpoints",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "190",
+              "left": "1750",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "8c4ddd89-c82b-4126-8ed9-baa5d3e59963"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "approve unquarantine -> cancel execution",
+              "targetStep": "/api/3/workflow_steps/ceccb3d7-63a6-40cc-95f9-7c5b1e3e06e2",
+              "sourceStep": "/api/3/workflow_steps/e1ecf0ff-d66d-4f77-a659-fd0634f05286",
+              "label": "Reject",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "a8bca204-a60b-4125-9a78-93c8a840467f"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "approve unquarantine -> quarantine endpoint",
+              "targetStep": "/api/3/workflow_steps/8c4ddd89-c82b-4126-8ed9-baa5d3e59963",
+              "sourceStep": "/api/3/workflow_steps/e1ecf0ff-d66d-4f77-a659-fd0634f05286",
+              "label": "Approve",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "ddb588a6-3d25-4868-a30c-95918365f1c9"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "extract alert source data -> extract client details",
+              "targetStep": "/api/3/workflow_steps/5dba2e42-d7bf-41e2-ad29-bcb0c6903582",
+              "sourceStep": "/api/3/workflow_steps/903a2843-9226-434e-b06c-a7e345e4813e",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "944440fe-774b-4eee-af19-c2bfb380fa8c"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "extract client details -> retrieve endpoint details",
+              "targetStep": "/api/3/workflow_steps/a1a74fac-0fe0-424e-920c-ea51fa4bfc1b",
+              "sourceStep": "/api/3/workflow_steps/5dba2e42-d7bf-41e2-ad29-bcb0c6903582",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "8767126c-636e-4b60-8412-0af354f526df"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "retrieve endpoint details -> approve unquarantine",
+              "targetStep": "/api/3/workflow_steps/e1ecf0ff-d66d-4f77-a659-fd0634f05286",
+              "sourceStep": "/api/3/workflow_steps/a1a74fac-0fe0-424e-920c-ea51fa4bfc1b",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "f17ceb16-5dfb-4dae-9e59-07163076d1d8"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> extract alert details",
+              "targetStep": "/api/3/workflow_steps/903a2843-9226-434e-b06c-a7e345e4813e",
+              "sourceStep": "/api/3/workflow_steps/0254dac7-2627-4148-b15c-897a867f3fa5",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "7fb4d667-cda9-4620-829f-7c7892222282"
+            }
+          ],
+          "groups": [],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "cb3dfafc-116e-413c-82c3-7ba51b070da1",
+          "id": 499,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "FortiClient EMS",
+            "FortiAnalyzer",
+            "FortiWeb",
+            "ZTNA"
+          ]
+        }
+      ]
+    }
+  ],
+  "exported_tags": [
+    "FortiClient EMS",
+    "FortiAnalyzer",
+    "FortiWeb",
+    "ZTNA"
+  ]
+}
