@@ -1,12 +1,12 @@
 ---
-title: "Task 2 - North-South ZTNA traffic"
+title: "Task 2 - Verify N-S Traffic"
 weight: 30
 ---
 
 
-#### **Test ZTNA North-South Inspection*8
+#### **Test ZTNA North-South Inspection**
 
-1. To Test N-S Access, RDP to Windows10 Client (IP address is on Terraform Output)
+1. To Test N-S Access, RDP to Windows10 Client (windows_client_pip address is in Terraform Output)
 
 2. on Windows 10 VM, the FortiClient is already installed. Double click on FortiClient EMS, Click on Zero trust telemetry
 
@@ -20,7 +20,7 @@ weight: 30
 
     ![ztnatest03](../images/ztnatest-03.jpg) 
 
-5. Open a browser on Windows Cliet and type https://10.0.0.4 in the browser or the Public IP address of FortiWeb the Port1 is NAT'd. Remember 10.0.0.4 is the Port1 IP of FortiWeb we created a Virtual Server. 
+5. Open a browser on Windows Cliet and type https://10.0.0.4 in the browser or the Public IP address of FortiWeb the Port1 is NAT'd. Remember Virtual Server we created is listening on Port1 of the FortiWeb with IP 10.0.0.4. 
 
   ![ztnatest04](../images/ztnatest-04.jpg) 
  

@@ -23,18 +23,28 @@ weight: 10
 
     ![firewall](../images/firewall.jpg)
 
-5. Now in ZTNA profile, update the already created ZTNA rule to add Linux tag. 
+5. SSH to the webserver_public_ip to register it to FortiEMS using the below command. forticlient_ems_server_public_ip can be found in Terraform output log. 
+
+    Once registered you should see the WebServer and APIServer on FortiEMS Endpoints module. 
+
+    `forticlient epctrl register "<forticlient_ems_server_public_ip>"`
+
+    ![webserver](../images/sshwebserver.jpg)
+
+
+6. Now in ZTNA profile, update the already created ZTNA rule to add Linux tag. 
     
      ![ztnaprofile](../images/ztnaprofile.jpg)
 
-6. Linux VM is already connected to the EMS. You can check endpoints connected to EMS. 
+7. Linux VM is already connected to the EMS. You can check endpoints connected to EMS. 
 
      ![endpoint](../images/endpoint.jpg)
 
-7. Now SSH to the other trusted Linux VM (IP address is in Terraform output) to get to the API server. once logged in type the below command.
+8. Now SSH to the other trusted Linux VM (IP address is in Terraform output) to get to the API server. once logged in type the below command.
 
-    curl --insecure https://10.0.0.4 <br>
-    curl --insecure https://10.0.0.4/docs 
+    `curl --insecure https://10.0.0.4`
+
+    `curl --insecure https://10.0.0.4/docs`
 
 You should see hello world response from the first command and also swagger html as a response from the /docs 
 
@@ -42,8 +52,9 @@ You should see hello world response from the first command and also swagger html
 
 ![swagger](../images/swagger.jpg)
 
-8. Now try the same to hit the trusted server directly. 
+9. Now try the same to hit the trusted server directly. 
 
-    curl --insecure https://10.0.1.4 <br>
-    curl --insecure https://10.0.1.4/docs 
+    `curl --insecure https://10.0.1.4`
+
+    `curl --insecure https://10.0.1.4/docs`
 

@@ -19,6 +19,10 @@ output "fortiwep_public_ip"{
     value = azurerm_public_ip.fwebpublicip.ip_address
 }
 
+output "fortiweb_port1_ip" {
+    value = azurerm_network_interface.fweb-nic1.private_ip_address
+}
+
 ###################### Output Windows Client Information ######################
 output "windows_client_public_ip" {
     value = azurerm_public_ip.windowsclientpublicip.ip_address
@@ -30,6 +34,11 @@ output "forticlient_ems_server_public_ip"{
     value = azurerm_public_ip.winserverpublicip.ip_address
 
 }
+
+output "ems_server_private_ip" {
+    value = azurerm_network_interface.windowsserver-nic1.private_ip_address
+}
+
 
 ###################### Output FortiAnalyzer Information ######################
 output "fortianalyzer_public_ip"{

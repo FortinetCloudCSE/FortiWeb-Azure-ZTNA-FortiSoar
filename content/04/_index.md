@@ -1,5 +1,5 @@
 ---
-title: "Chapter 4 - ZTNA Microsegmentation"
+title: "Chapter 4 - Microsegmentation"
 weight: 4
 ---
 
