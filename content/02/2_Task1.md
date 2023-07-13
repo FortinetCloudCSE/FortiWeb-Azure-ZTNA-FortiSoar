@@ -5,7 +5,7 @@ weight: 20
 
 #### 1. **EMS Setup and licensing**
 
-1. RDP to the Windows Server IP address using the all_username and all_password credentials.
+1. RDP to the EMS Server IP address (Terraform output) using the all_username and all_password credentials.
 
     ![windowsserver1](../images/windowsserver-01.jpg)
 

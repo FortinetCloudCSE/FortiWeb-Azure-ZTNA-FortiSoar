@@ -15,7 +15,7 @@ output "apiserver_private_ip" {
 }
 
 ###################### Output FortiWeb Information ######################
-output "fortiwep_public_ip"{
+output "fortiweb_public_ip"{
     value = azurerm_public_ip.fwebpublicip.ip_address
 }
 
