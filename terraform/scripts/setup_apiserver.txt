@@ -1,0 +1,19 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt install python3-pip
+
+pip install fastapi
+pip install "uvicorn[standard]"
+
+python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+# Install FortiClient
+wget -O - https://repo.fortinet.com/repo/forticlient/7.2/ubuntu/DEB-GPG-KEY | sudo apt-key add -
+echo "deb [arch=amd64] https://repo.fortinet.com/repo/forticlient/7.2/ubuntu/ /stable multiverse" >> /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install -qy forticlient
+# Register FortiClient to EMS
+forticlient epctrl register "$(terraform output -raw windows_server_pip)" 
+
+echo "Finish Setup" >> /tmp/state.log

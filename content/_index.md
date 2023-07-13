@@ -47,6 +47,12 @@ Lab-1:
 * Configure FortiWeb to provide access from Internet to Web application with ZTNA
 * Configure FortiWeb to provide access on a trusted network to access the web API
 
+Lab-2:
+
+* FortiSoar Access from FortiAnalyzer
+* Enable FAZ connector on FortiSoar
+* Create a Playbook 
+* Quarantine and UnQuaratine a client based on malicious traffic
 
 {{< notice warning >}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various Fortinet and Azure services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments without full understanding of how they operate.

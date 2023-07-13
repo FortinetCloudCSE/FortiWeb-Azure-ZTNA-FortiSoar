@@ -1,0 +1,4 @@
+config system global
+    set hostname ${fweb_vm_name}
+end
+execute vm-license ${fweb_flex_license}

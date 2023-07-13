@@ -17,6 +17,7 @@ During the playbook development process, you will leverage FortiSOAR's capabilit
 
 By the end of this lab, you will have hands-on experience in utilizing FortiSOAR's features to create a customized playbook that combines the knowledge obtained from previous labs, particularly the ZTNA lab with FortiWeb. This exercise will help you understand the practical application of FortiSOAR in incident response and further enhance your proficiency in leveraging security automation tools.
 
+
 #### Overview
 
 This lab is built as an extension of the previous Lab (ZTNA with FortiWeb). Additionally, FortiAnalyzer & FortiSOAR will be introduced as tools to solve the upcoming task.
@@ -26,11 +27,3 @@ There is no need to apply any additional Setup steps as the infrastructure alrea
 As similar Scenario is show in the following video by the Product Manager of FortiSOAR. In this Video, Malicious traffic got detected from a specific Workstation. With the help of FortiSOAR and the ML Engine, the SOC analyst get provided with various quick actions and additional information which helps to Quarentine the Client and mitigate the issue within seconds.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/etWghPmIuCg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-#### Lab Architecture Diagram
-
-This Diagram provides a high-level overview of the deployed Systems and the corresponding internal IP addresses.
-
-FortiSOAR is deployed as a Management Extension on FortiAnalyzer VM.
-
-   ![Lab Diagram](../images/cselab.png)

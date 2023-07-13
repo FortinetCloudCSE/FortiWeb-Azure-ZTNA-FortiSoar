@@ -1,0 +1,8 @@
+# Resource Group Name
+resourcegroup = "cse-ztna-lab-rg0622"
+# Location
+location = "Westus2"
+
+# FortiFlex Credentials
+fortiflex_api_user = ""
+fortiflex_api_password = ""
