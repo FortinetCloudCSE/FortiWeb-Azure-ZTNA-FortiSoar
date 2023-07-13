@@ -1,6 +1,6 @@
 resource "azurerm_windows_virtual_machine" "windowsclient" {
   name                = "windowsclient"
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   location            = azurerm_resource_group.resourcegroup.location
   size                = "Standard_DS1_v2"
   admin_username      = var.adminusername

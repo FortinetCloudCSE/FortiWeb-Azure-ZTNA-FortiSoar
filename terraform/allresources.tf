@@ -6,15 +6,14 @@ resource "random_string" "random" {
   upper            = false
 }
   //############# Resource Group ###########
-resource "azurerm_resource_group" "resourcegroup" {
-  name     = var.resourcegroup
-  location = var.location
+data "azurerm_resource_group" "resourcegroup" {
+  name     = "${var.username}-ztna-workshop"
 }
 
 //############# Public IP ###########
 resource "azurerm_public_ip" "fwebpublicip" {
   name                = "publicip-fweb"
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   location            = azurerm_resource_group.resourcegroup.location
   allocation_method   = "Static"
 
@@ -22,7 +21,7 @@ resource "azurerm_public_ip" "fwebpublicip" {
 
 resource "azurerm_public_ip" "winserverpublicip" {
   name                = "publicip-windowsserver"
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   location            = azurerm_resource_group.resourcegroup.location
   allocation_method   = "Static"
 
@@ -30,7 +29,7 @@ resource "azurerm_public_ip" "winserverpublicip" {
 
 resource "azurerm_public_ip" "windowsclientpublicip" {
   name                = "publicip-windowsclient"
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   location            = azurerm_resource_group.resourcegroup.location
   allocation_method   = "Static"
 
@@ -40,7 +39,7 @@ resource "azurerm_public_ip" "windowsclientpublicip" {
 resource "azurerm_public_ip" "fortianalyzerpublicip" {
   name                = "fortianalyzer-pip"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   allocation_method   = "Static"
 
 }
@@ -48,7 +47,7 @@ resource "azurerm_public_ip" "fortianalyzerpublicip" {
 resource "azurerm_public_ip" "apiserverpublicip" {
   name                = "apiserver-pip"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   allocation_method   = "Static"
 
 }
@@ -56,7 +55,7 @@ resource "azurerm_public_ip" "apiserverpublicip" {
 resource "azurerm_public_ip" "webserverpublicip" {
   name                = "webserver-pip"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   allocation_method   = "Static"
 
 }
@@ -76,14 +75,14 @@ data "template_file" "apiserver" {
 resource "azurerm_virtual_network" "vnet" {
   name                = var.vnetname
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
   address_space       = ["10.0.0.0/22"]
 }
 
 //############# External Subnet ###########
 resource "azurerm_subnet" "external" {
   name                 = "external"
-  resource_group_name  = azurerm_resource_group.resourcegroup.name
+  resource_group_name  = data.azurerm_resource_group.resourcegroup.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.0.0/26"]
 }
@@ -91,7 +90,7 @@ resource "azurerm_subnet" "external" {
 //############# Internal Subnet ###########
 resource "azurerm_subnet" "internal" {
   name                 = "internal"
-  resource_group_name  = azurerm_resource_group.resourcegroup.name
+  resource_group_name  = data.azurerm_resource_group.resourcegroup.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.0.64/26"]
 }
@@ -99,7 +98,7 @@ resource "azurerm_subnet" "internal" {
 //############# Protected Subnet ###########
 resource "azurerm_subnet" "application" {
   name                 = "application"
-  resource_group_name  = azurerm_resource_group.resourcegroup.name
+  resource_group_name  = data.azurerm_resource_group.resourcegroup.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.0.1.0/24"]
 }
@@ -109,7 +108,7 @@ resource "azurerm_subnet" "application" {
 resource "azurerm_network_interface" "fweb-nic1" {
   name                = "fweb-nic1"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "fweb-external"
@@ -126,7 +125,7 @@ resource "azurerm_network_interface" "fweb-nic1" {
 resource "azurerm_network_interface" "fweb-nic2" {
   name                = "fweb-nic2"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "fweb-internal"
@@ -140,7 +139,7 @@ resource "azurerm_network_interface" "fweb-nic2" {
 resource "azurerm_network_interface" "windowsserver-nic1" {
   name                = "windowsserver-nic1"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "windowsserver-nic1"
@@ -159,7 +158,7 @@ resource "azurerm_network_interface" "windowsserver-nic1" {
 resource "azurerm_network_interface" "windowsclient-nic1" {
   name                = "windowsclient-internal"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "windowsclient-nic1"
@@ -174,7 +173,7 @@ resource "azurerm_network_interface" "windowsclient-nic1" {
 resource "azurerm_network_interface" "webserver-nic1" {
   name                = "webserver-nic1"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "webserver-nic1"
@@ -188,7 +187,7 @@ resource "azurerm_network_interface" "webserver-nic1" {
 resource "azurerm_network_interface" "apiserver-nic1" {
   name                = "apiserver-nic"
   location            = var.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "api-nic1"
@@ -204,7 +203,7 @@ resource "azurerm_network_interface" "apiserver-nic1" {
 resource "azurerm_network_interface" "fortianalyzer-nic1" {
   name                = "fortianalyzer-nic1"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   ip_configuration {
     name                          = "faz-nic1"
@@ -219,7 +218,7 @@ resource "azurerm_network_interface" "fortianalyzer-nic1" {
 //############# Azure Storage Account ###########
 resource "azurerm_storage_account" "fwebstorageaccount" {
   name                     = "fwebstorageaccount${random_string.random.result}"
-  resource_group_name      = azurerm_resource_group.resourcegroup.name
+  resource_group_name      = data.azurerm_resource_group.resourcegroup.name
   location                 = azurerm_resource_group.resourcegroup.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
@@ -230,7 +229,7 @@ resource "azurerm_storage_account" "fwebstorageaccount" {
 resource "azurerm_network_security_group" "securitygroup" {
   name                = var.securitygrpname
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
     name                       = "all_inbound"
@@ -261,7 +260,7 @@ resource "azurerm_network_security_group" "securitygroup" {
 resource "azurerm_network_security_group" "webserver_nsg" {
   name                = "webserver-nsg"
   location            = var.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
     name                       = "allow_ssh"
@@ -305,7 +304,7 @@ resource "azurerm_network_security_group" "webserver_nsg" {
 resource "azurerm_network_security_group" "apiserver_nsg" {
   name                = "apiserver-nsg"
   location            = var.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   security_rule {
     name                       = "allow_ssh"
@@ -386,7 +385,7 @@ resource "azurerm_network_interface_security_group_association" "connect_apiserv
 resource "azurerm_route_table" "fweb_rt" {
   name                = "fortiweb_route_table"
   location            = azurerm_resource_group.resourcegroup.location
-  resource_group_name = azurerm_resource_group.resourcegroup.name
+  resource_group_name = data.azurerm_resource_group.resourcegroup.name
 
   route {
     name                   = "to_vnet_route"

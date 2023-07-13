@@ -3,7 +3,7 @@ resource "azurerm_linux_virtual_machine" "webserver" {
   depends_on = [ azurerm_windows_virtual_machine.windowsserver ]
   name                  = "webserver-vm"
   location              = var.location
-  resource_group_name   = azurerm_resource_group.resourcegroup.name
+  resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids = [azurerm_network_interface.webserver-nic1.id]
   size                  = "Standard_B2s"
 
@@ -57,7 +57,7 @@ resource "azurerm_linux_virtual_machine" "apiserver" {
     depends_on = [ azurerm_windows_virtual_machine.windowsserver ]
   name                  = "apiserver-vm"
   location              = var.location
-  resource_group_name   = azurerm_resource_group.resourcegroup.name
+  resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids = [azurerm_network_interface.apiserver-nic1.id]
   size                  = "Standard_B2s"
 

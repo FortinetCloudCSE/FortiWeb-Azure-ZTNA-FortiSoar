@@ -4,7 +4,7 @@ resource "azurerm_virtual_machine" "fwebvm" {
   zones                        = null
   name                         = "fwebvm"
   location                     = var.location
-  resource_group_name          = azurerm_resource_group.resourcegroup.name
+  resource_group_name          = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids        = [azurerm_network_interface.fweb-nic1.id, azurerm_network_interface.fweb-nic2.id]
   primary_network_interface_id = azurerm_network_interface.fweb-nic1.id
   vm_size                      = var.size
