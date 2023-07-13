@@ -1,4 +1,10 @@
-## FortiSOAR Content Hub & Connectors
+---
+title: "Task 2 - FortiSoar content hub"
+weight: 20
+---
+
+
+#### FortiSOAR Content Hub & Connectors
 
 Content Hub is a vital component of FortiSOAR that provides a centralized repository of pre-built playbooks, scripts, and integrations. It serves as a knowledge base and resource center for security operations, allowing teams to leverage existing content and collaborate effectively.
 
@@ -10,7 +16,7 @@ Furthermore, Content Hub enables collaboration and knowledge sharing among secur
 
 More Information can be found in the [FortiSOAR User Guide - Content Hub](http://docs.fortinet.com/document/fortisoar/7.4.1/user-guide/667127/content-hub)
 
-### How to access the Content Hub
+#### How to access the Content Hub
 
 1. If not already done, expand the sidebar menu by clicking on the arrow the at top left
 

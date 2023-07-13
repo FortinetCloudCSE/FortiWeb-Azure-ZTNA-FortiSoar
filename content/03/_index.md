@@ -1,4 +1,10 @@
-## North-South ZTNA traffic 
+---
+title: "Chapter 3 - ZTNA North-South"
+weight: 3
+---
+
+
+### North-South ZTNA traffic 
 
 1. Set up FortiWeb Policy
 2. Set up ZTNA policy on FortiWeb 

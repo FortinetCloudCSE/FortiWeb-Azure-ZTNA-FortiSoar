@@ -1,4 +1,10 @@
-## East-West inspection
+---
+title: "Task 1 - East - West ZTNA traffic"
+weight: 10
+---
+
+
+#### **East-West inspection**
 
 1. Now that Server policy is all setup, for microsegmentation within trusted network using ZTNA we need to edit the ZTNA profile. Also, since FortiWeb has a firewall we will be using a firewall policy to prevent traffic between trusted network.
 

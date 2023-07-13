@@ -1,4 +1,10 @@
-## Test ZTNA North-South Inspection
+---
+title: "Task 2 - North-South ZTNA traffic"
+weight: 30
+---
+
+
+#### **Test ZTNA North-South Inspection*8
 
 1. To Test N-S Access, RDP to Windows10 Client (IP address is on Terraform Output)
 

@@ -1,6 +1,10 @@
-## Create your own Playbook
+---
+title: " Task 1- Create your own Playbook"
+weight: 10
+---
 
-### Playbook Editor
+
+#### Playbook Editor
 
 To start with the creation of a new Playbook, take the following Steps:
 

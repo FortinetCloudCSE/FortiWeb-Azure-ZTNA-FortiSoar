@@ -3,9 +3,7 @@ title: "Chapter 1 - Getting Started"
 weight: 1
 ---
 
-## Fortinet Azure FortiWeb ZTNA Workshop
-
-### Chapter 1 - Provisioning the Azure environment (40min)
+#### Provisioning the Azure environment (40min)
 
 Provision your Azure Environment, enter your Email address and click _Provision_
 {{< launchdemoform >}}

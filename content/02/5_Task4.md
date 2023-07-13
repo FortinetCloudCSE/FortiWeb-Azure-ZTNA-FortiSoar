@@ -1,4 +1,9 @@
-## Creating ZTNA tags on FortiEMS
+---
+title: "Task 4 - ZTNA tags creation"
+weight: 50
+---
+
+### **Creating ZTNA tags on FortiEMS**
 
 We need to create ZTNA tags to tag endpoints that connect to FortiClient. These tags will sync with FortiWeb and can be used in ZTNA rules. 
 

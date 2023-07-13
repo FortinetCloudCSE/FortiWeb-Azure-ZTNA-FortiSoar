@@ -1,4 +1,10 @@
-## FortiWeb Policy setup
+---
+title: "Task 1 - North-South ZTNA traffic"
+weight: 20
+---
+
+
+#### **FortiWeb Policy setup**
 
 1. Before creating ZTNA profiles and Tags, We need to create a Server policy on FortiWeb. To create a server policy set up a server pool on FortiWeb. 
 

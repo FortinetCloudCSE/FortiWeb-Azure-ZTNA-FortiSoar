@@ -1,4 +1,9 @@
-## Connect FortiWeb to EMS.
+---
+title: "Task 3 - Connect FortiWeb to EMS"
+weight: 40
+---
+
+#### **Connect FortiWeb to EMS**
 
 1. To connect FortiWeb to EMS, go to Security Fabric >> Fabric Connectors >> FortiClient EMS
 

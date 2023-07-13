@@ -1,3 +1,8 @@
+---
+title: " Task 2- Jina2 Filters"
+weight: 20
+---
+
 ### Jinja2 Filter and Functions
 
 Fortinet provides a very comprehensive Guide which describes all Jinja2 Filters and functions in detail: [FortiSOAR Jinja2 Filter & Functions](https://docs.fortinet.com/document/fortisoar/7.4.1/playbooks-guide/767891/jinja-filters-and-functions#Jinja_Filters_and_Functions)

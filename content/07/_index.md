@@ -1,4 +1,10 @@
-# Introduction to FortiSOAR Playbooks
+---
+title: " Chapter 7 - FortiSoar Playbook"
+weight: 8
+---
+
+
+#### Introduction to FortiSOAR Playbooks
 
 Playbooks play a pivotal role in security orchestration and automation, and FortiSOAR stands out by providing a comprehensive library of pre-built playbooks delivered by default. These playbooks, designed by Fortinet's cybersecurity experts, offer a significant advantage compared to other competitors in the market.
 

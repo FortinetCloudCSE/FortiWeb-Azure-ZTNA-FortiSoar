@@ -1,9 +1,9 @@
 ---
-title: "Task 1 - Basic Setup"
+title: "Task 1 - EMS Setup"
 weight: 20
 ---
 
-## EMS Setup and licensing
+#### 1. **EMS Setup and licensing**
 
 1. RDP to the Windows Server IP address using the all_username and all_password credentials.
 
@@ -42,7 +42,7 @@ weight: 20
 
     ![FortiEMSlicensesync](../images/windowsserver-08.jpg)
 
-# To Update License
+#### 2. **Updating License**
 
 1. On EMS, we see _"SSL Certificate is not Secure"_ at the top. 
 

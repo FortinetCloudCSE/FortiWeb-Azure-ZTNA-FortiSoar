@@ -1,4 +1,9 @@
-# Introduction
+---
+title: "Chapter 5 - FAZ and FortiSOAR"
+weight: 6
+---
+
+#### Introduction
 
 In this lab, we will begin by providing a brief introduction to FortiSOAR. FortiSOAR is a comprehensive Security Orchestration, Automation, and Response (SOAR) platform. It offers a centralized and integrated solution for managing security incidents, automating response actions, and streamlining security operations.
 
@@ -12,7 +17,7 @@ During the playbook development process, you will leverage FortiSOAR's capabilit
 
 By the end of this lab, you will have hands-on experience in utilizing FortiSOAR's features to create a customized playbook that combines the knowledge obtained from previous labs, particularly the ZTNA lab with FortiWeb. This exercise will help you understand the practical application of FortiSOAR in incident response and further enhance your proficiency in leveraging security automation tools.
 
-# Overview
+#### Overview
 
 This lab is built as an extension of the previous Lab (ZTNA with FortiWeb). Additionally, FortiAnalyzer & FortiSOAR will be introduced as tools to solve the upcoming task.
 
@@ -22,7 +27,7 @@ As similar Scenario is show in the following video by the Product Manager of For
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/etWghPmIuCg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Lab Architecture Diagram
+#### Lab Architecture Diagram
 
 This Diagram provides a high-level overview of the deployed Systems and the corresponding internal IP addresses.
 

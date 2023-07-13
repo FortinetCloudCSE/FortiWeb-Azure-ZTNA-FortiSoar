@@ -1,9 +1,9 @@
 ---
 title: "Chapter 2 - Basic Setup"
-weight: 1
+weight: 2
 ---
 
-## Basic Setup
+### Basic Setup
 
 1. Licensing EMS 
 2. Licening FortiWeb

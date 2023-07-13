@@ -1,6 +1,8 @@
-# Tasks - FortiSOAR & FortiClient EMS
+---
+title: "Task 1 - FortiSOAR & FortiClient EMS"
+weight: 10
+---
 
-## Task 1 - Quarantine Client
 
 As a first Task in this lab, you will develop your own Playbook to quarantine Client on FortiClient EMS. Based on the Informaition you have learned in the Prvious Chapter, the Playbook has to accomplish the following tasks:
 
@@ -8,9 +10,8 @@ As a first Task in this lab, you will develop your own Playbook to quarantine Cl
 
   - To trigger an Attack alert, make sure that a Security profile is configured within the FortiWeb Policy, in addition, feel free to use the following string and just append it to the URL to trigger an Attack Alert
 
-  ```url
-  ?q=%27%20or%20data%20@>%20%27{"a":"b"}%27%20--
-  ```
+  ``url?q=%27%20or%20data%20@>%20%27{"a":"b"}%27%20--
+  ``
 
 - Retrieve more details based on the Alert Information about the Client
 
@@ -31,17 +32,17 @@ As a first Task in this lab, you will develop your own Playbook to quarantine Cl
 In case you will use the `Get all Endpoints` function of the FortiClient EMS Connector, the following Values are required:
 
 ```json
-# Verifiction:
+## Verifiction:
 {
   "saml_id": "",
   "ldap_ids": []
 }
 
-# Filter
+## Filter
 <Specify you filter here>
 ```
 
-## Task 2 - Unquarantine Client
+### 2 - Unquarantine Client
 
 As the last Task, you have developed a Playbook which allows to quarantine a Client via FortiClient EMS. As you may notice, you have lost remote access to the Client. Your next Task is to develop a Second Playbook which will unquarantine the previous Client based in the same Input Values like in Task 1.
 

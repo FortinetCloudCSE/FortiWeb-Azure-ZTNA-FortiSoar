@@ -1,4 +1,9 @@
-## How to Connect to FortiSOAR Webinterface
+---
+title: "Task 1 - Connect to FortiSoar"
+weight: 10
+---
+
+#### How to Connect to FortiSOAR Webinterface
 
 1. Open the URL of FortiAnalyzer, using the Public IP Address (e.g. https://20.234.157.6)
 2. Login into FortiAnalyzer with the provided lab credentials

@@ -1,8 +1,13 @@
-# Prepare FortiAnalyzer and FortiWeb for the Lab
+---
+title: "Task 1 - FortiAnalyzer"
+weight: 10
+---
+
+#### Prepare FortiAnalyzer and FortiWeb for the Lab
 
 This Chapter includes necessary steps to setup Log shipping and Event Monitoring with FortiAnalyzer of FortiWeb. Please make sure you have completed this section before moving on!
 
-## FortiWeb Preparations
+#### FortiWeb Preparations
 
 1. Login to FortiWeb with the give credentials
 
@@ -53,7 +58,7 @@ end
 
 13. Logging of FortiWeb to FortiAnalyzer is now enabled. Please proceed with the configuration of FortiAnalyzer
 
-## FortiAnalyzer Preparations
+#### FortiAnalyzer Preparations
 
 1. Login to FortiAnalyzer with the given Credentials
 
@@ -84,9 +89,6 @@ end
 
    ![image-20230709102616262](../assets/image-20230709102616262.png)
 
-   
-
-   
 
    7. To be able to feed Security Events within FortiSOAR, Events need to get generated within the Event Monitor. For this to work, a so called Handler needs to be in Place. The Handler for FortiWeb is disabled by default and needs to be enabled. For this, goto `Incidents & Events` - `Handlers`
 

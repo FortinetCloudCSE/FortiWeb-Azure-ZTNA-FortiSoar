@@ -1,4 +1,9 @@
-## Licensing FortiWeb
+---
+title: "Task 2 - FortiWeb Setup"
+weight: 30
+---
+
+#### **Licensing FortiWeb**
 
 1. Login to FortiWeb with https://<fortiweb_pip>:8443. Fortiweb_pip IP can be found from Terraform output. Use the all_unsername and all_password as login credentials. 
  

@@ -1,11 +1,11 @@
 ---
-title: "ZTNA Azure"
+title: "Fortinet FortiWeb ZTNA and FortiSoar Workshop"
 weight: 1
 ---
 
-## Fortinet FortiGate SDWAN Networking Workshop on Azure
+## Fortinet FortiWeb ZTNA and FortiSoar Workshop on Azure
 
-In this workshop you will learn how to deploy Fortinet's FortiGate NGFW on Azure in several different use cases
+In this workshop you will learn how to configure ZTNA on Fortinet's FortiWeb Web application and API protection firewall. Also in the second part of the lab you will learn how we can use FortiSoar to quarantine a client sending malicious traffic.   
 
 ### About TEC Workshops
 
@@ -28,7 +28,7 @@ Deployments will be automated for those tasks that are not salient to the learni
 ## FortiWeb ZTNA TEC Workshop
 Introduction:
 
-With increase in remote workforce and devices off networks, Security for accessing applications have been a challenge. ZTNA offers security for users that are  not present on the network and are trying to access the applications and data. FortiWeb Web Application and API security firewall offers ZTNA with lot more other capabilities, protecting both North-South and east-West traffic. Fortiweb highlights include:
+With increase in remote workforce and devices off networks, Security for accessing applications have been a challenge. ZTNA offers security for users that are  not present on the network and are trying to access the applications and data. FortiWeb Web Application and API security firewall offers ZTNA with lot more other capabilities, protecting both north-south and east-west traffic. Fortiweb highlights include:
 
 * OWASP Top 10 protection signature database
 * Machine learning based Anomaly and Bot detection
@@ -40,12 +40,13 @@ The purpose of this TEC Workshop is to familiarize the learner with FortiWeb ZTN
 
 ## TEC Workshop Objectives
 
+Lab-1: 
+
 * Deploy the FortiWeb and all the required components like FortiEMS using Terraform
 * Configure EMS
 * Configure FortiWeb to provide access from Internet to Web application with ZTNA
 * Configure FortiWeb to provide access on a trusted network to access the web API
 
-***
 
 {{< notice warning >}}
 The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various Fortinet and Azure services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments without full understanding of how they operate.

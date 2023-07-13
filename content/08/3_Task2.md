@@ -1,16 +1,21 @@
-# Solutions
+---
+title: "Solutions"
+weight: 20
+---
+
+#### Solutions
 
 In this Section you will find a detailed solution of the previos tasks. In addition, there are example Playbooks attached which you can import as a solution.
 
-## Challenge 1 Solution
+### Challenge 1 Solution
 
-### Example Playbook Overview
+#### Example Playbook Overview
 
 <img src="../assets/image-20230711133047657.png" alt="image-20230711133047657" style="100%;" />
 
 - [Download Example Playbook](../assets/Solution-1-Playbook-(2023711135).json)
 
-### Step Details
+#### Step Details
 
 1. Stepname: `Start`
 
@@ -66,9 +71,9 @@ This step is just an empty step which does nothing but ends the execution of the
 
 
 
-## Challenge 2 Solution
+### Challenge 2 Solution
 
-### Example Playbook Overview
+#### Example Playbook Overview
 
 ![image-20230711135059383](../assets/image-20230711135059383.png)
 
