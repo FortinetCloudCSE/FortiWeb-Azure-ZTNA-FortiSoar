@@ -8,4 +8,4 @@ weight: 5
 This Diagram provides a high-level overview of the deployed Systems and the corresponding internal IP addresses.
 FortiSOAR is deployed as a Management Extension on FortiAnalyzer VM
 
-![labdiagram2](../assets/cselab2.jpg)
+![labdiagram2](./assets/cselab2.jpg)
