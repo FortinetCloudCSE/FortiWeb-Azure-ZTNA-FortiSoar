@@ -10,6 +10,8 @@ variable "location" {
   default     = "Westus"
 }
 
+
+
 variable "publicip" {
   description = "public_ip_name"
   type        = string
