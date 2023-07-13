@@ -1,11 +1,13 @@
 variable "resourcegroup" {
   description = "resource_group_name"
   type        = string
+  default     = "fweb-ztna-fortisoar-lab"
 }
 
 variable "location" {
   description = "resource_group_location"
   type        = string
+  default     = "Westus"
 }
 
 variable "publicip" {
