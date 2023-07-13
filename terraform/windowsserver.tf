@@ -1,7 +1,7 @@
 resource "azurerm_windows_virtual_machine" "windowsserver" {
   name                = "windowsserver"
   resource_group_name = data.azurerm_resource_group.resourcegroup.name
-  location            = azurerm_resource_group.resourcegroup.location
+  location            = var.location
   size                = "Standard_DS2_v2"
   admin_username      = var.adminusername
   admin_password      = var.adminpassword

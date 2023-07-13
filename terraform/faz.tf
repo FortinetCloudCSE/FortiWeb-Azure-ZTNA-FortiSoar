@@ -1,6 +1,6 @@
 resource "azurerm_virtual_machine" "fazvm" {
   name                         = "fortianalyzer-vm"
-  location                     = azurerm_resource_group.resourcegroup.location
+  location                     = var.location
   resource_group_name          = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids        = [azurerm_network_interface.fortianalyzer-nic1.id]
   primary_network_interface_id = azurerm_network_interface.fortianalyzer-nic1.id

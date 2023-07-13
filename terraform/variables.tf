@@ -4,6 +4,9 @@ variable "location" {
   default     = "eastus"
 }
 
+variable "username" {
+  type        = string
+}
 
 
 variable "publicip" {
