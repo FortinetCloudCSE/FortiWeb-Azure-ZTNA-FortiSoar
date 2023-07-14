@@ -7,7 +7,7 @@ weight: 20
 
 1. RDP to the EMS Server IP address (Terraform output) using the all_username and all_password credentials.
 
-    ![windowsserver1](../images/windowsserver-01.jpg)
+    ![windowsserver1](../images/windowsserver-01.png)
 
 2. FortiEMS is already installed on Windows Server. 
 
