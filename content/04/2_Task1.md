@@ -1,5 +1,5 @@
 ---
-title: "Task 1 - East - West ZTNA traffic"
+title: "Task 1 - East-West ZTNA traffic"
 weight: 10
 ---
 
