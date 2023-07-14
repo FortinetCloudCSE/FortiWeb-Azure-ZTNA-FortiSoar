@@ -13,7 +13,7 @@ We need to create ZTNA tags to tag endpoints that connect to FortiClient. These 
 
 2. Enter **name**: windowsclient, **tag endpoint as**: windows (_Press Enter for creating a new tag_), click **Add rule**
 
-    ![emswin](../images/ztnatags-02.jpg)
+    ![emswin](../images/ztnatags-02.png)
 
 3. In the rule, Select **Windows**, in OS type: **Windows**, add the Windows version as shown below. 
 

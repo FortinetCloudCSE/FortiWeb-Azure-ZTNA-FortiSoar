@@ -1,5 +1,5 @@
 ---
-title: "Task 1 - East - West ZTNA traffic"
+title: "Task 1 - East-West ZTNA traffic"
 weight: 10
 ---
 
@@ -54,7 +54,7 @@ You should see hello world response from the first command and also swagger html
 
 9. Now try the same to hit the trusted server directly. 
 
-    `curl --insecure https://10.0.1.4`
+    `curl --insecure https://10.0.1.5`
 
-    `curl --insecure https://10.0.1.4/docs`
+    `curl --insecure https://10.0.1.5/docs`
 

@@ -1,11 +1,11 @@
 ---
-title: "Fortinet FortiWeb ZTNA and FortiSoar Workshop"
+title: "Fortinet FortiWeb ZTNA and FortiSOAR Workshop"
 weight: 1
 ---
 
-## Fortinet FortiWeb ZTNA and FortiSoar Workshop on Azure
+## Fortinet FortiWeb ZTNA and FortiSOAR Workshop on Azure
 
-In this workshop you will learn how to configure ZTNA on Fortinet's FortiWeb Web application and API protection firewall. Also in the second part of the lab you will learn how we can use FortiSoar to quarantine a client sending malicious traffic.   
+In this workshop you will learn how to configure ZTNA on Fortinet's FortiWeb Web application and API protection firewall. Also in the second part of the lab you will learn how we can use FortiSOAR to quarantine a client sending malicious traffic.   
 
 ### About TEC Workshops
 
@@ -49,8 +49,8 @@ Lab-1:
 
 Lab-2:
 
-* FortiSoar Access from FortiAnalyzer
-* Enable FAZ connector on FortiSoar
+* FortiSOAR Access from FortiAnalyzer
+* Enable FAZ connector on FortiSOAR
 * Create a Playbook 
 * Quarantine and UnQuaratine a client based on malicious traffic
 
