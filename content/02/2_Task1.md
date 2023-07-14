@@ -31,7 +31,7 @@ weight: 20
 
     ![FortiEMSlicense](../images/windowsserver-06.jpg)
 
-7. Login to https://support.fortinet.com, register asset >>
+7. Login to https://support.fortinet.com, register asset with the hardware ID. Download the license document.
     
     1. Paste the registration code from the license document, click Next
     2. Paste the Hardware ID from the EMS >> register
