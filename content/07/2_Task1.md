@@ -1,5 +1,5 @@
 ---
-title: " Task 1- Create your own Playbook"
+title: " Task 1 - Create your own Playbook"
 weight: 10
 ---
 
@@ -13,8 +13,7 @@ To start with the creation of a new Playbook, take the following Steps:
 ![image-20230709104331292](../assets/image-20230709104331292.png)
 
 2. Choose any Collection you want (for example `01 - Drafts` Collection), then click on `+ Add Playbook`
-
-<img src="../assets/Screenshot 2023-07-09 at 10.44.48.png" alt="Screenshot 2023-07-09 at 10.44.48" style="zoom:50%;" />
+![Screenshot 2023-07-09 at 10.44.48]("../assets/Screenshot 2023-07-09 at 10.44.48.png")
 
 3. Provide a new `Name` for the Playbook, keep the default values and then click on `Create`
 
@@ -31,8 +30,7 @@ For more information about the Trigger Step, please have a look at the [FortiSOA
 After selecting a Trigger, the `Name` and `Execution Behaviour` (Scope) needs to be defined. For Example, if the Playbook is used to reaction on an Alert, The `Alerts` Module would be selected. Multiple selections are possible if the Playbooks can be also used for other Modules.
 
 In my case, I do not require any input to run, but the playbook should only be used in the Alerts Module.
-
-<img src="../assets/image-20230709115825816.png" alt="image-20230709115825816" style="zoom: 50%;" />
+![image-20230709115825816](../assets/image-20230709115825816.png)
 
 If done with the configuration of the Step, select Save at the bottom left of the Pop-up.
 
@@ -97,8 +95,7 @@ By selecting the Custom Variable `example` the Jinja2 Expression will be automat
 As an alternative, you can also write `{{ vars. example }}`
 
 In case the next Step within a Playbook requires to use Values from a previous Step, FortiSOAR offers a very easy solution to access those. Just select the correlating Step within the Pop-up menu and follow the tree structur to select the required variable name.
-
-<img src="../assets/image-20230711132901386.png" alt="image-20230711132901386" style="zoom:50%;" />
+![image-20230711132901386](../assets/image-20230711132901386.png)
 
 Click on `Save` to save our progress. Also don't forget to save your Playbook.
 
@@ -131,8 +128,7 @@ This was a very simple Playbook but for now this is everything you need to know 
 In the next Section, you will find some useful Jinja2 expression examples and Links which can be very handy.
 
 If the Playbook ist done, you can use it e.g. within the Alerts Section. For this, just select an exiting alert and choose the `Execute` Menu entry at the top. The select the corresponding Playbook you want to execute.
-
-<img src="../assets/image-20230711122505908.png" alt="image-20230711122505908" style="zoom:50%;" />
+![image-20230711122505908](../assets/image-20230711122505908.png)
 
 ### Jinja2 Filter and Functions
 

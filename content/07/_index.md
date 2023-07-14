@@ -1,5 +1,5 @@
 ---
-title: " Chapter 7 - FortiSoar Playbook"
+title: " Chapter 7 - FortiSOAR Playbooks"
 weight: 8
 ---
 

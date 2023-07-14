@@ -1,17 +1,18 @@
 ---
-title: "Solution - Task 1"
-weight: 20
+title: "Solution - Task 2"
+weight: 25
 ---
 
-### Challenge 1 Solution
+### Challenge 2 Solution
 In this Section you will find a detailed solution of the previos tasks. In addition, there are example Playbooks attached which you can import as a solution.
 
 #### Example Playbook Overview
-![image-20230711133047657](../assets/image-20230711133047657.png)
 
-- [Download Example Playbook](../assets/Solution-1-Playbook-(2023711135).json)
+![image-20230711135059383](../assets/image-20230711135059383.png)
 
-#### Step Details
+- [Download Example Playbook](../assets/Solution-2-Playbook-(2023711135).json)
+
+### Step Details
 
 1. Stepname: `Start`
 
@@ -35,7 +36,6 @@ This step will use the FortiClient EMS Connector to retrieve all endpoints but w
 
 ![image-20230711155401188](../assets/image-20230711155401188.png)
 
-
 5. Stepname: `approve quarantine`
 
 Before quarantine the client, a approval step based on the `Manual Input` Step is defined. This Step will output various details as requested by the Task and proceeds depending on the Button which is selected by the User.
@@ -47,11 +47,10 @@ Before quarantine the client, a approval step based on the `Manual Input` Step i
 
 ![image-20230711155739757](../assets/image-20230711155739757.png)
 
+6. Stepname: `unquarantine client`
 
-6. Stepname: `quarantine client`
-
-This step leverages the FortiClient EMS connector to quarantine the Client based on the client id which can be extracted of the result of step `get all endpoints filtered`
-![image-20230711160123665](../assets/image-20230711160123665.png)
+This step leverages the FortiClient EMS connector to unquarantine the Client based on the client id which can be extracted of the result of step `get all endpoints filtered`
+![image-20230711160506558](../assets/image-20230711160506558.png)
 
 6. Stepname: `cancel execution`
 
