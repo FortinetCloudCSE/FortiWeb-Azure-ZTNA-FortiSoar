@@ -7,7 +7,7 @@ weight: 20
 
 1. RDP to the EMS Server IP address (Terraform output) using the all_username and all_password credentials.
 
-    ![windowsserver1](../images/windowsserver-01.jpg)
+    ![windowsserver1](../images/windowsserver-01.png)
 
 2. FortiEMS is already installed on Windows Server. 
 
@@ -31,7 +31,7 @@ weight: 20
 
     ![FortiEMSlicense](../images/windowsserver-06.jpg)
 
-7. Login to https://support.fortinet.com, register asset >>
+7. Login to https://support.fortinet.com, register asset with the hardware ID. Download the license document.
     
     1. Paste the registration code from the license document, click Next
     2. Paste the Hardware ID from the EMS >> register

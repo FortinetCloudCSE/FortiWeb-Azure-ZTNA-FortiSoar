@@ -10,8 +10,9 @@ As a first Task in this lab, you will develop your own Playbook to quarantine Cl
 
   - To trigger an Attack alert, make sure that a Security profile is configured within the FortiWeb Policy, in addition, feel free to use the following string and just append it to the URL to trigger an Attack Alert
 
-  ``url?q=%27%20or%20data%20@>%20%27{"a":"b"}%27%20--
-  ``
+  ```url
+  ?q=%27%20or%20data%20@>%20%27{"a":"b"}%27%20--
+  ```
 
 - Retrieve more details based on the Alert Information about the Client
 
@@ -31,13 +32,14 @@ As a first Task in this lab, you will develop your own Playbook to quarantine Cl
 
 In case you will use the `Get all Endpoints` function of the FortiClient EMS Connector, the following Values are required:
 
+- Value for Field: `Verifiction`:
 ```json
-## Verifiction:
 {
   "saml_id": "",
   "ldap_ids": []
 }
-
-## Filter
-<Specify you filter here>
+```
+- Value for Field: `Filter`:
+```json
+<Specify you filter here - have a look into the example playbook>
 ```

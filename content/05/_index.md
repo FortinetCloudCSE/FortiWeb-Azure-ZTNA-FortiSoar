@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5 - FAZ and FortiSOAR"
+title: "Chapter 5 - FortiAnalyzer and FortiSOAR"
 weight: 6
 ---
 
@@ -26,4 +26,4 @@ There is no need to apply any additional Setup steps as the infrastructure alrea
 
 As similar Scenario is show in the following video by the Product Manager of FortiSOAR. In this Video, Malicious traffic got detected from a specific Workstation. With the help of FortiSOAR and the ML Engine, the SOC analyst get provided with various quick actions and additional information which helps to Quarentine the Client and mitigate the issue within seconds.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/etWghPmIuCg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube etWghPmIuCg >}}

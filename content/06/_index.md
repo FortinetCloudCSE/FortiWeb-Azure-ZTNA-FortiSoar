@@ -1,7 +1,7 @@
 ---
-title: " Chapter 6 - FortiSoar"
+title: " Chapter 6 - FortiSOAR Overview"
 weight: 7
 ---
 
-1. How to Connect to FortiSOAR Webinterface
+1. Introduction to FortiSOAR
 2. FortiSOAR Content Hub & Connectors

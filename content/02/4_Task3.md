@@ -11,7 +11,7 @@ weight: 40
 
 2. Enter the IP and Port for FortiWeb to connect to FortiClient EMS, click OK.
 
-    ![fortiwebemsconnect](../images/fortiweb-05.jpg)
+    ![fortiwebemsconnect](../images/fortiweb-05.png)
 
 3. You will see a Certificate warning to connect to EMS. Click OK.
 
