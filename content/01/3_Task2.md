@@ -26,7 +26,7 @@ terraform init
 ![lab11](../images/terraform1.jpg)
 
 
-4. Set the Terraform environment variables:
+4. Set the Terraform environment variables **(check in dedicated the e-mail send to you by the organizers)**:
     1. `export TF_VAR_fortiflex_api_user='<api_user_sent_in_email>'`
     2. `export TF_VAR_fortiflex_api_password='<api_password_sent_in_email>'`
 5. Run `terraform apply  -var='username=UserXX' --auto-approve`
