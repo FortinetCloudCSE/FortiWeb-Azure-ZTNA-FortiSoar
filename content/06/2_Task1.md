@@ -1,5 +1,5 @@
 ---
-title: "Task 1 - Connect to FortiSoar"
+title: "Task 1 - Introduction to FortiSOAR"
 weight: 10
 ---
 
@@ -8,27 +8,27 @@ weight: 10
 1. Open the URL of FortiAnalyzer, using the Public IP Address (e.g. https://20.234.157.6)
 2. Login into FortiAnalyzer with the provided lab credentials
 
-<img src="../assets/image-20230703161312434.png" alt="image-20230703161312434" style="zoom: 33%;" />
+![image-20230703161312434](../assets/image-20230703161312434.png)
 
 3. In the FortiAnalyzer Setup Wizard, click on `Next`, then keep the default hostname and click on `Next`again.
 
-<img src="../assets/image-20230703161503446.png" alt="image-20230703161503446" style="zoom:25%;" />
+![image-20230703161503446](../assets/image-20230703161503446.png)
 
 4. Click on `Finish` to complete the Setup
 
-<img src="../assets/image-20230703161536512.png" alt="image-20230703161536512" style="zoom: 25%;" />
+![image-20230703161536512](../assets/image-20230703161536512.png)
 
 5. At the left side menu, select `Management Extension`
 
-<img src="../assets/image-20230703161621934.png" alt="image-20230703161621934" style="zoom: 50%;" />
+![image-20230703161621934](../assets/image-20230703161621934.png)
 
 6. if not automatically selected, click on `FortiSOAR` to access the FortiSOAR Webinterface. In Case not already done, accept the Terms and Service by Scrolling down to the Bottom of the embedded Site and click on `Accept`
 
-<img src="../assets/image-20230703172719810.png" alt="image-20230703172719810" style="zoom:50%;" />
+![image-20230703172719810](../assets/image-20230703172719810.png)
 
 6. The FortiSOAR Dashboard Page should be now visible as a iframe
 
-<img src="../assets/image-20230703161816336.png" alt="image-20230703161816336" style="zoom: 25%;" />
+![image-20230703161816336](../assets/image-20230703161816336.png)
 
 8. Congratulations, you have successfully logged into FortiSOAR. Proceed with the next Chapter.
 
@@ -38,34 +38,34 @@ By default, FortiSOAR comes with a limited Perpetual license. This type of licen
 
 1. Within the FortiSOAR WebUI, select the Gear icon at the top right.
 
-![Screenshot 2023-07-04 at 13.56.30](../assets/Screenshot 2023-07-04 at 13.56.30.png)
+![Screenshot 2023-07-04 at 13.56.30]("../assets/Screenshot 2023-07-04 at 13.56.30.png")
 
 2. In the System Configuration, goto the License manager
 
-<img src="../assets/Screenshot 2023-07-04 at 14.03.49.png" alt="Screenshot 2023-07-04 at 14.03.49" style="zoom: 33%;" />
+![Screenshot 2023-07-04 at 14.03.49]("../assets/Screenshot 2023-07-04 at 14.03.49.png")
 
 3. Copy the Device UUID and enter into the [Support Portal](https://support.fortinet.com) to be able to Download the licenses file.
 
-<img src="../assets/Screenshot 2023-07-04 at 17.25.56.png" alt="Screenshot 2023-07-04 at 17.25.56" style="zoom:50%;" />
+![Screenshot 2023-07-04 at 17.25.56]("../assets/Screenshot 2023-07-04 at 17.25.56.png")
 
 3. Upload the license file via `Update License`
 4. Drag'n Drop / Select the license file, then click on `Install License File`
 
-<img src="../assets/image-20230704140808211.png" alt="image-20230704140808211" style="zoom:50%;" />
+![image-20230704140808211](../assets/image-20230704140808211.png)
 
-<img src="../assets/image-20230704172742780.png" alt="image-20230704172742780" style="zoom:50%;" />
+![image-20230704172742780](../assets/image-20230704172742780.png)
 
 6. `Confirm` the Installation of the new license
 
-<img src="../assets/image-20230704172816380.png" alt="image-20230704172816380" style="zoom:50%;" />
+![image-20230704172816380](../assets/image-20230704172816380.png)
 
 If you recive an error like below, wait some minutes and repeat the step
 
-<img src="../assets/image-20230704172938917.png" alt="image-20230704172938917" style="zoom:50%;" />
+![image-20230704172938917](../assets/image-20230704172938917.png)
 
 7. Validate that the new license has been installed correctly
 
-<img src="../assets/image-20230704174302655.png" alt="image-20230704174302655" style="zoom:50%;" />
+![image-20230704174302655](../assets/image-20230704174302655.png)
 
 ## Incident and Alarm Handling in FortiSOAR
 
@@ -81,16 +81,16 @@ More Information can be found in the [FortiSOAR User Guide - Working with Module
 
 1. Expand the sidebar menu by clicking on the arrow the at top left
 
-<img src="../assets/image-20230703165828637.png" alt="image-20230703165828637" style="zoom:50%;" />
+![image-20230703165828637](../assets/image-20230703165828637.png)
 
 2. Select `Incident Response` - `Alerts` to access the recived alerts and events
 
-<img src="../assets/image-20230703165927793.png" alt="image-20230703165927793" style="zoom:50%;" />
+![image-20230703165927793](../assets/image-20230703165927793.png)
 
 This Section is empty at the moment. The further we get in the lab, the more alerts there will show up.
 
 3. The `Incidents` can be found in the same menu right after the `Alerts`
 
-<img src="../assets/image-20230703170242741.png" alt="image-20230703170242741" style="zoom:50%;" />
+![image-20230703170242741](../assets/image-20230703170242741.png)
 
 Incidents are usually a group of multiple events and can contain multiple Alerts and Indicators. 

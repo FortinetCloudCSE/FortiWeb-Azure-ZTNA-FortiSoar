@@ -73,7 +73,7 @@ end
    - Name: `FortiWeb`
    - Serial Number: <Serial Number of FortiWeb> (This can be found at the Dashboard of FortiWeb)
 
-   <img src="./assets/Screenshot 2023-07-09 at 10.19.36.png" alt="Screenshot 2023-07-09 at 10.19.36" style="zoom: 50%;" />
+   ![Screenshot 2023-07-09 at 10.19.36]("../assets/Screenshot 2023-07-09 at 10.19.36.png")
 
    ![image-20230709102101586](../assets/image-20230709102101586.png)
 
