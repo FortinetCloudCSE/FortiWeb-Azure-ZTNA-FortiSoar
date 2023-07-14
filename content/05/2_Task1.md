@@ -1,5 +1,5 @@
 ---
-title: "Task 1 - FortiAnalyzer"
+title: "Task 1 - Preparation of FortiAnalyzer and FortiWeb"
 weight: 10
 ---
 
@@ -66,7 +66,7 @@ end
 
 2. Goto `Device Manager` and click on `Add Device` to add FortiWeb
 
-![Screenshot 2023-07-09 at 10.17.32](./assets/Screenshot 2023-07-09 at 10.17.32.png)
+![Screenshot 2023-07-09 at 10.17.32]("../assets/Screenshot 2023-07-09 at 10.17.32.png")
 
 3. Provide the follwoing Information, then click on `Next` to proceed with the configuration.
 
@@ -92,7 +92,7 @@ end
 
    7. To be able to feed Security Events within FortiSOAR, Events need to get generated within the Event Monitor. For this to work, a so called Handler needs to be in Place. The Handler for FortiWeb is disabled by default and needs to be enabled. For this, goto `Incidents & Events` - `Handlers`
 
-   ![image-20230709102903218](./assets/image-20230709102903218.png)
+   ![image-20230709102903218](../assets/image-20230709102903218.png)
 
    8. Select the `Basic Handlers` Tab, then use the Search field at the top right to search for `FWB`
 
@@ -104,7 +104,7 @@ end
 
    10. Check that the Status changes from `disabled` to `enabled` (green checkmark)
 
-   ![image-20230709103200793](../assets/image-20230709103200793.png)#
+   ![image-20230709103200793](../assets/image-20230709103200793.png)
 
    11. As soon as FortiWeb detects an attack, a new Event entry will get added. See the following Example:
 
