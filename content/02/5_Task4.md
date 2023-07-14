@@ -26,3 +26,8 @@ We need to create ZTNA tags to tag endpoints that connect to FortiClient. These 
 5. Also Create another tag for windows vulnerbale device as show below. 
 
     ![emswinvulnerable](../images/ztnatags-05.jpg) 
+
+6. By default we cannot see ZTNA tags when Endpoints connect to Zero Trust telemetry. For ZTNA tags to be visible on FortiClient, you need to enable in FortiEMS. 
+
+On FortiEMS >> Endpoint profiles >> System Settings >> Advanced >> enable show zero trust tag on FortiClient GUI.
+    ![ztnatagsems](../images/ztnatagsems.jpg)
