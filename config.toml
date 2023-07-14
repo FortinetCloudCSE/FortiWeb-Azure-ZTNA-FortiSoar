@@ -2,7 +2,7 @@ googleAnalytics = "G-XMBT244X49"
 
 baseURL = "https://FortinetCloudCSE.github.io/FortiWeb-Azure-ZTNA-FortiSoar"
 languageCode = 'en-us'
-title = 'Workshop Documentation'
+title = 'Fortinet FortiWeb ZTNA and FortiSOAR Workshop on Azure'
 
 defaultContentLanguage = "en"
 
@@ -14,7 +14,7 @@ uglyurls = "true"
 enableEmoji = true
 
 [params]
-  description = "Workshop Documentation"
+  description = "Fortinet FortiWeb ZTNA and FortiSOAR Workshop on Azure"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -57,22 +57,22 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-graduation-cap'></i> FortiSoar Admin Guide "
+name = "<i class='fas fa-graduation-cap'></i> FortiSOAR Admin Guide "
 url = "https://docs.fortinet.com/document/fortisoar/7.4.1/administration-guide/249178/overview"
 weight = 20
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> FortiSoar Content Hub "
+name = "<i class='fas fa-tools'></i> FortiSOAR Content Hub "
 url = "https://fortisoar.contenthub.fortinet.com/"
 weight = 22
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>FortiSoar Playbook Guide "
+name = "<i class='fas fa-tools'></i>FortiSOAR Playbook Guide "
 url = "http://docs.fortinet.com/document/fortisoar/7.4.1/playbooks-guide/331279/introduction-to-playbooks"
 weight = 23
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> FortiSoar connectors "
+name = "<i class='fas fa-tools'></i> FortiSOAR Connectors "
 url = "https://docs.fortinet.com/fortisoar/connectors"
 weight = 21
 
