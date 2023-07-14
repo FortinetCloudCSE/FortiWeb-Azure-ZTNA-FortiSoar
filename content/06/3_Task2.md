@@ -34,7 +34,7 @@ The same information can be also found at the [FortiSOAR Content Hub Webpage](ht
 1. Search for FortiAnalyzer in the Searchbar
 ![image-20230703172215245](../assets/image-20230703172215245.png)
 
-2. Selec the `Fortinet FortiAnalyzer` Connector. A new overlay Window appear which provides more details and the ability to install the connector.
+2. Select the `Fortinet FortiAnalyzer` Connector. A new overlay Window appear which provides more details and the ability to install the connector.
 ![image-20230703173030364](../assets/image-20230703173030364.png)
 
 3. To Install the selected Connector, click on `Install` at the bottom left of the Popup.
