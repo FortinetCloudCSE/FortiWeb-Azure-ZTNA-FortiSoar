@@ -57,9 +57,14 @@ enableEmoji = true
 home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-graduation-cap'></i> FortiSOAR Admin Guide "
+name = "<i class='fas fa-tools'></i> FortiSOAR Admin Guide "
 url = "https://docs.fortinet.com/document/fortisoar/7.4.1/administration-guide/249178/overview"
 weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i> FortiSOAR Connectors "
+url = "https://docs.fortinet.com/fortisoar/connectors"
+weight = 21
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-tools'></i> FortiSOAR Content Hub "
@@ -72,15 +77,24 @@ url = "http://docs.fortinet.com/document/fortisoar/7.4.1/playbooks-guide/331279/
 weight = 23
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i> FortiSOAR Connectors "
-url = "https://docs.fortinet.com/fortisoar/connectors"
-weight = 21
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-tools'></i>FortiSOAR Bytes Youtube Channel"
+name = "<i class='fas fa-graduation-cap'></i>FortiSOAR Bytes Youtube Channel"
 url = "https://www.youtube.com/@fortisoarbytes3419"
 weight = 24
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>FortiWeb ZTNA Setup Guide"
+url = "https://docs.fortinet.com/document/fortiweb/7.2.0/administration-guide/114128"
+weight = 25
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>FortiClient Admin Guide"
+url = "https://docs.fortinet.com/document/forticlient/7.2.1/administration-guide/725845/introduction"
+weight = 26
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i>FortiClient ZTNA Guide"
+url = "https://docs.fortinet.com/document/forticlient/7.2.1/administration-guide/550622/zero-trust-telemetry"
+weight = 27
 
 [markup]
   defaultMarkdownHandler = "goldmark"
