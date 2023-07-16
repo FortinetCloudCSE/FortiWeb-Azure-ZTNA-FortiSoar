@@ -4,7 +4,6 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
@@ -16,10 +15,13 @@ def read_item(item_id: int, q: Union[str, None] = None):
 
 class Item(BaseModel):
     name: str
-    description: str | None = None
+    description: str
     price: float
-    tax: float | None = None
+    tax: float
 
 @app.post("/items/")
 async def create_item(item: Item):
     return item
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="info")

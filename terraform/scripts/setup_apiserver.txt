@@ -1,12 +1,13 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt install python3-pip
+sudo apt -qy install python3-pip tmux
 
 pip install fastapi
 pip install "uvicorn[standard]"
 
-python3 -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+tmux new-session -d -s my_session \; send-keys "python3 /home/cloudteam/main.py" Enter
 
 # Install FortiClient
 wget -O - https://repo.fortinet.com/repo/forticlient/7.2/ubuntu/DEB-GPG-KEY | sudo apt-key add -
