@@ -98,12 +98,7 @@ resource "null_resource" "copy-cert-file-db" {
     source      = "./ems_ssl_certificates/Fortinet_Cloud_Demo_CA.crt"
     destination = "/tmp/Fortinet_Cloud_Demo_CA.crt"
   }
-
-  provisioner "file" {
-  source      = "./scripts/main.py"
-  destination = "/home/cloudteam/main.py"
-  }
-
+  
   provisioner "remote-exec" {
     inline = [
       "sudo cp /tmp/Fortinet_Cloud_Demo_CA.crt /usr/local/share/ca-certificates/",
