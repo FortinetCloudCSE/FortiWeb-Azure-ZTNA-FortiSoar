@@ -68,13 +68,13 @@ data "template_file" "faz_custom_data" {
   }
 }
 
-resource "time_sleep" "delay_80s" {
+resource "time_sleep" "delay_120s" {
   depends_on = [azurerm_virtual_machine.fazvm ]
-  create_duration = "80s"
+  create_duration = "120s"
 }
 
 resource "null_resource" "setup_soar_container" {
-  depends_on = [time_sleep.delay_80s]
+  depends_on = [time_sleep.delay_120s]
   provisioner "local-exec" {
     command = "python3 analyzer_api.py ${azurerm_public_ip.fortianalyzerpublicip.ip_address} ${var.adminusername} ${var.adminpassword}"
     working_dir = "${path.module}/scripts"
