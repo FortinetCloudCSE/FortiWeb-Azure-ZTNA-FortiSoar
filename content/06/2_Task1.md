@@ -38,15 +38,15 @@ By default, FortiSOAR comes with a limited Perpetual license. This type of licen
 
 1. Within the FortiSOAR WebUI, select the Gear icon at the top right.
 
-![imagesoar1]("../assets/imagesoar1.jpg")
+![imagesoar1](../assets/imagesoar1.jpg)
 
 2. In the System Configuration, goto the License manager
 
-![imagesoar2]("../assets/imagesoar2.jpg")
+![imagesoar2](../assets/imagesoar2.jpg)
 
 3. Copy the Device UUID and enter into the [Support Portal](https://support.fortinet.com) to be able to Download the licenses file.
 
-![imagesoar3]("../assets/imagesoar3.jpg")
+![imagesoar3](../assets/imagesoar3.jpg)
 
 3. Upload the license file via `Update License`
 4. Drag'n Drop / Select the license file, then click on `Install License File`
