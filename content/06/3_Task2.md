@@ -75,7 +75,7 @@ To Configure the Data Ingestion of FortiAnalyzer, for example to feed Events gen
 ![image-20230704124749201](../assets/image-20230704124749201.png)
 
 3. Select the FortiAnalyzer Connector, and click on `Configure Data Ingestion` at the right side of the Window
-![Screenshot 2023-07-04 at 12.49.02]("../assets/Screenshot 2023-07-04 at 12.49.02.png")
+    ![imagesoar4.jpg](../assets/imagesoar4.jpg)
 
 4. A new Overlay Popup will appear. Click on `Let's start by fetching some data` to start the configuration process
 ![image-20230704125148880](../assets/image-20230704125148880.png)
@@ -101,7 +101,7 @@ To Configure the Data Ingestion of FortiAnalyzer, for example to feed Events gen
 ![image-20230704133915122](../assets/image-20230704133915122.png)
 
 13. By selecting the `Fortinet FortiAnalyzer` entry, an overview of the availible configurations will appear. Select `Trigger Ingestion Now` at the right to feed in availibe events and alerts.
-![Screenshot 2023-07-04 at 13.40.43]("../assets/Screenshot 2023-07-04 at 13.40.43.png")
+![imagesoar5.jpg](../assets/imagesoar5.jpg)
 
 14. A banner at the top of the page will appear which confirms that the ingestion is running. 
 15. To view the results, switch to the `Incident Response` - `Alert` Section and view the events getting added to FortiSOAR.

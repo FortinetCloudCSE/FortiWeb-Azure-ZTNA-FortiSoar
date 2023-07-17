@@ -13,7 +13,7 @@ To start with the creation of a new Playbook, take the following Steps:
 ![image-20230709104331292](../assets/image-20230709104331292.png)
 
 2. Choose any Collection you want (for example `01 - Drafts` Collection), then click on `+ Add Playbook`
-![Screenshot 2023-07-09 at 10.44.48]("../assets/Screenshot 2023-07-09 at 10.44.48.png")
+![imagesoar6](../assets/imagesoar6.jpg)
 
 3. Provide a new `Name` for the Playbook, keep the default values and then click on `Create`
 
@@ -48,7 +48,7 @@ Select `DEBUG` from the dropdown menu and click on `Apply`
 
 To Execute a Playbook, click on the "Play"-Button the the top right of the Playbook Editor.
 
-![Screenshot 2023-07-09 at 11.01.09](../assets/Screenshot 2023-07-09 at 11.01.09.png)
+![imagesoar7](../assets/imagesoar7.jpg)
 
 Don't forget to regularly press `Save Playbook` button to not loose your work. This is also required, before executing a Playbook.
 
