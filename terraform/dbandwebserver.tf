@@ -77,7 +77,7 @@ resource "azurerm_linux_virtual_machine" "apiserver" {
   computer_name                   = "apiserver-vm"
   admin_username                  = var.adminusername
   admin_password                  = var.adminpassword
-  custom_data                     = base64encode(data.template_file.webserver.rendered)
+  custom_data                     = base64encode(data.template_file.apiserver.rendered)
   disable_password_authentication = false
 
   tags = {}
