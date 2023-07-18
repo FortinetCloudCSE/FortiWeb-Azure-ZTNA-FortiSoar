@@ -66,14 +66,14 @@ end
 
 2. Goto `Device Manager` and click on `Add Device` to add FortiWeb
 
-![Screenshot 2023-07-09 at 10.17.32]("../assets/Screenshot 2023-07-09 at 10.17.32.png")
+![imagesoar8](../assets/imagesoar8.jpg)
 
 3. Provide the follwoing Information, then click on `Next` to proceed with the configuration.
 
    - Name: `FortiWeb`
    - Serial Number: <Serial Number of FortiWeb> (This can be found at the Dashboard of FortiWeb)
 
-   ![Screenshot 2023-07-09 at 10.19.36]("../assets/Screenshot 2023-07-09 at 10.19.36.png")
+   ![imagesoar9](../assets/imagesoar9.jpg)
 
    ![image-20230709102101586](../assets/image-20230709102101586.png)
 
