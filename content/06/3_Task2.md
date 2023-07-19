@@ -49,7 +49,9 @@ The same information can be also found at the [FortiSOAR Content Hub Webpage](ht
 ![image-20230703174209489](../assets/image-20230703174209489.png)
 
 7. Add a new configuration with the information show on the screenshot. Adjust the values to fit the information provided for the lab.
+
 ![image-20230703175746414](../assets/image-20230703175746414.png)
+**Note: Please uncheck the `Verify SSL ` option as the lab is using a self signed certificate.**
 
 8. Click on `Save` and validate that all Steps of the configuration verification, including the Health check are successfull.
 ![image-20230703175926590](../assets/image-20230703175926590.png)
