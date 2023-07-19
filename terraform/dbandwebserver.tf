@@ -6,6 +6,7 @@ resource "azurerm_linux_virtual_machine" "webserver" {
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids = [azurerm_network_interface.webserver-nic1.id]
   size                  = "Standard_B2s"
+  vtpm_enabled          = true
 
   os_disk {
     name                 = "OSDisk-webserver-vm"
@@ -60,6 +61,7 @@ resource "azurerm_linux_virtual_machine" "apiserver" {
   resource_group_name   = data.azurerm_resource_group.resourcegroup.name
   network_interface_ids = [azurerm_network_interface.apiserver-nic1.id]
   size                  = "Standard_B2s"
+  vtpm_enabled          = true
 
   os_disk {
     name                 = "OSDisk-apiserver-vm"
