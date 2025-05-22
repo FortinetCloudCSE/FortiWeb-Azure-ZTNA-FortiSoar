@@ -1,0 +1,61 @@
+{
+    "repoName": "FortiWeb-Azure-ZTNA-FortiSoar",
+    "author": "",
+    "workshopTitle": "Fortinet FortiWeb ZTNA and FortiSOAR Workshop on Azure",
+    "themeVariant": "Workshop",
+    "logoBannerText": "",
+    "logoBannerSubText": "",
+    "errorLevel": "warning",
+    "googleServicesID": "G-5RZBH288ST",
+    "marketingCode": "FortiHugo202",
+    "shortcuts": [
+        {
+            "text": "FortiSOAR Admin Guide ",
+            "URL": "https://docs.fortinet.com/document/fortisoar/7.4.1/administration-guide/249178/overview",
+            "icon": "fa-tools",
+            "weight": 20
+        },
+        {
+            "text": "FortiSOAR Connectors ",
+            "URL": "https://docs.fortinet.com/fortisoar/connectors",
+            "icon": "fa-tools",
+            "weight": 21
+        },
+        {
+            "text": "FortiSOAR Content Hub ",
+            "URL": "https://fortisoar.contenthub.fortinet.com/",
+            "icon": "fa-tools",
+            "weight": 22
+        },
+        {
+            "text": "FortiSOAR Playbook Guide ",
+            "URL": "http://docs.fortinet.com/document/fortisoar/7.4.1/playbooks-guide/331279/introduction-to-playbooks",
+            "icon": "fa-tools",
+            "weight": 23
+        },
+        {
+            "text": "FortiSOAR Bytes Youtube Channel",
+            "URL": "https://www.youtube.com/@fortisoarbytes3419",
+            "icon": "fa-tools",
+            "weight": 24
+        },
+        {
+            "text": "FortiWeb ZTNA Setup Guide",
+            "URL": "https://docs.fortinet.com/document/fortiweb/7.2.0/administration-guide/114128",
+            "icon": "fa-tools",
+            "weight": 25
+        },
+        {
+            "text": "FortiClient Admin Guide",
+            "URL": "https://docs.fortinet.com/document/forticlient/7.2.1/administration-guide/725845/introduction",
+            "icon": "fa-tools",
+            "weight": 26
+        },
+        {
+            "text": "FortiClient ZTNA Guide",
+            "URL": "https://docs.fortinet.com/document/forticlient/7.2.1/administration-guide/550622/zero-trust-telemetry",
+            "icon": "fa-tools",
+            "weight": 27
+        }
+    ]
+}
