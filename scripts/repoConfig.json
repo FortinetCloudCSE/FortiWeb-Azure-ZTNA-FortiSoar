@@ -6,6 +6,7 @@
     "logoBannerText": "",
     "logoBannerSubText": "",
     "errorLevel": "warning",
+    "provisionApiBaseUrl": "https://func-cse-lab-provisioning.azurewebsites.net",
     "googleServicesID": "G-5RZBH288ST",
     "marketingCode": "FortiHugo202",
     "shortcuts": [
